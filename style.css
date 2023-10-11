@@ -1,0 +1,192 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+section h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.menuList{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 20px;  
+}
+.projectsection{
+    display: none;
+}
+.menuList a{
+    color: black;
+    text-decoration: none;
+
+}
+.image {
+    height: 600px;
+    width: 100%;
+    background-image:url(images/images/eugene-chystiakov-fw9Ik9B9G44-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.imagetext h2{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow:0px 4px 7px black;
+    padding-bottom: 16px;
+}
+.imagetext p{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:0px 0px 2px #fff;
+    text-transform: lowercase;
+}
+.boxcontainer {
+    width: 98%;
+    margin: 5px auto;
+    }
+.boxcontainer div {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+footer{
+    background-color: black;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+footer ul li{
+    list-style: none;
+    line-height: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media only screen and (min-width: 1000px){
+   section {
+       display: flex;
+       align-items: center;
+       padding-left: 5rem;
+       width: 100%;
+   }
+   section h1 {
+       border-right: 2px solid #111d;
+       padding: 0 14px;
+       text-align: left;
+   } 
+   .menuListcontainer {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 80%;
+   }
+   .menuList li {
+       padding: 16px;
+   }
+   .menuList a {
+       text-transform: capitalize;
+       font-weight: 700;
+   }
+   
+   .projectsection {
+    display: block;
+    padding: 7px 12px;
+    border: 2px solid #111;
+}
+.projectsection a {
+color: black;
+text-decoration: none;
+}
+.image {
+    height: 600px;
+    background-image: url(images/images/firosnv-photography-1wBmbnvv4TE-unsplash.jpg);
+}
+.imagetext{
+    width: 600px;
+    margin: 0 5rem;
+}
+.imagetext h2 {
+    text-align: left;
+    font-size: clamp(0.5rem, 0.7rem + 3vw, 7rem);
+}
+.imagetext p{
+    text-align: left;
+    font-size: 22px;
+    color: #fff; 
+    text-shadow: 0px 4px 7px #111;
+}
+.boxcontainer {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "box1 box2 box4"
+                        "box3 box3 box5";
+    gap: 10px 15px;                    
+
+}
+.boxcontainer div {
+    height: 9rem;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+
+}
+
+.box4 {
+    grid-area: box4;
+
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+footer {
+    background-color: #111;
+    padding: 2rem 5rem;
+}
+
+.secondUlfooterContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondUlfooter {
+    margin: 1rem 2rem;
+    display: block;
+    color: #fff;
+}
+}
